@@ -19,10 +19,9 @@ const callbackHandler = async (req: NextApiRequest, res: NextApiResponse) => {
       code: code,
       redirect_uri: "http://localhost:3000/api/callback",
       grant_type: "authorization_code",
-    });
+    }).toString();
 
-    const authUrl =
-      "https://accounts.spotify.com/api/token?" + authQuery.toString();
+    const authUrl = "https://accounts.spotify.com/api/token?" + authQuery;
 
     const authOptions = {
       method: "POST",
