@@ -1,0 +1,8 @@
+
+☐ @high create an auth handler
+    - when ljcast is run, it should try to login with new credentials
+        - these credentials will overwrite the old ones
+
+☐ @low create a me handler
+    - me api calls are made to check songs played and other spotify things
+    // break off break the auth callback
